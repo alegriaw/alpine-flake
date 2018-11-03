@@ -44,4 +44,4 @@ $ docker push 318503653371.dkr.ecr.us-east-2.amazonaws.com/ecs-alb-with-flask/ho
 
 
 **Thanks to the reference:**
-https://www.bogotobogo.com/DevOps/AWS/aws-ELB-ALB-Application-Load-Balancer-ECS.php
+[K Hong](https://www.bogotobogo.com/DevOps/AWS/aws-ELB-ALB-Application-Load-Balancer-ECS.php)
