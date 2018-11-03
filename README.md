@@ -7,8 +7,10 @@ The ALB gets request on port 80 and depending on the path (uri), it will redirec
 
 In other words, the ALB makes routing decisions at the application layer (HTTP/HTTPS), does path-based routing, and can route requests to the ports (5000 or 8081) on each container instances in our VPC.
 ### Prerequisites
-Docker-ce
-git 
+```
+Docker-ce 
+git
+```
 
 ### Build the Docker images
 1. Create docker images for Blog/Home apps **under /src/Blog or /src/Home**, execute the following comment, for example:
