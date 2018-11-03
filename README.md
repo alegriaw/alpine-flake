@@ -26,13 +26,13 @@ aws-demo-blog       latest              7d3c4cd33155        About a minute ago  
 ```
 
 ### Push docker images to AWS ECR
-3. Create a repo on aws ECR:
-```sh
-$ aws ecr create-repository --repository-name ecs-alb-with-flask/home
-```
-4. Login to aws ECS, (note: set [$aws configure](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) first)
+3. Login to aws ECS, (note: set [$aws configure](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) first)
 ```sh
 $(aws ecr get-login --no-include-email --region us-east-2)
+```
+4. Create a repo on aws ECR:
+```sh
+$ aws ecr create-repository --repository-name ecs-alb-with-flask/home
 ```
 5. Create docker tags for your images
 ```sh
