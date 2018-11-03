@@ -1,5 +1,5 @@
 # alpine-flake
-this is a simple flake web app demo for docker
+This is a simple flake web app demo for docker
 
 Here creates two Dockerfiles for the two apps(Blog/Home) and upload (push) the images to ECR using AWS cli commands.
 
