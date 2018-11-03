@@ -4,8 +4,9 @@ COPY requirements.txt /
 
 RUN pip install -r /requirements.txt
 
-COPY . /src
+COPY . /app
+WORKDIR /app
 
 EXPOSE 8081
 
-CMD cd /src && python blog.py
+CMD python blog.py
