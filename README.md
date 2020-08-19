@@ -27,8 +27,10 @@ aws-demo-blog       latest              7d3c4cd33155        About a minute ago  
 
 ### Push docker images to AWS ECR
 3. Login to aws ECS, (note: set [$aws configure](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) first)
+[update 2020/08] After AWS CLI 1.17.10, should authenticate Docker to an Amazon ECR registry with **get-login-password**, run the aws ecr get-login-password command. 
+[$get-login-password (AWS CLI)](https://docs.aws.amazon.com/AmazonECR/latest/userguide/Registries.html#registry_auth)
 ```sh
-$(aws ecr get-login --no-include-email --region us-east-2)
+$ aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 318503653371.dkr.ecr.us-east-2.amazonaws.com
 ```
 4. Create a repo on aws ECR:
 ```sh
